@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS `starwars`;
-CREATE DATABASE `starwars`;
+DROP DATABASE IF EXISTS `helloworld`;
+CREATE DATABASE `helloworld`;
