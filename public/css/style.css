@@ -47,6 +47,11 @@ label {
   color: white;
 }
 
+.modal-content {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
 .landing-container {
   padding: 100px 0;
   max-width: 340px;
