@@ -2,23 +2,19 @@
 // Effectively it takes the form inputs then sends it to the server to save in the DB.
 
 // when user clicks add-btn
-$("#add-btn").on("click", function(event) {
+$("#signup-submit").on("click", function(event) {
   event.preventDefault();
 
-  // make a newCharacter obj
-  var newCharacter = {
-    // name from name input
-    name: $("#name").val().trim(),
-    // role from role input
-    role: $("#role").val().trim(),
-    // age from age input
-    age: $("#age").val().trim(),
-    // points from force-points input
-    forcePoints: $("#force-points").val().trim()
+  // make a newUser obj
+  var newUser = {
+    // user_name from user_name input
+    user_name: $("#user_name").val().trim(),
+    // password from password input
+    password: $("#password").val().trim(),
   };
 
   // send an AJAX POST-request with jQuery
-  $.post("/api/new", newCharacter)
+  $.post("/api/new", newUser)
     // on success, run this callback
     .done(function(data) {
       // log the data we found
@@ -28,9 +24,7 @@ $("#add-btn").on("click", function(event) {
     });
 
   // empty each input box by replacing the value with an empty string
-  $("#name").val("");
-  $("#role").val("");
-  $("#age").val("");
-  $("#force-points").val("");
+  $("#user_name").val("");
+  $("#password").val("");
 
 });
