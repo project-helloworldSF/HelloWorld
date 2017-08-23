@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     // the user's profile pic as a url (a string)
     profile_pic: DataTypes.STRING,
     // the user's age (an integer)
-    age: DataTypes.INTEGER,
+    age: DataTypes.STRING,
     // the user's gender (a string)
     gender: DataTypes.STRING,
     // the user's ethnicity (a string)
@@ -17,15 +17,15 @@ module.exports = function(sequelize, DataTypes) {
     // the name of the user's bootcamp (a string)
     bootcamp_name: DataTypes.STRING,
     // the duration of the user's program (a integer)
-    date_range: DataTypes.INTEGER,
+    date_range: DataTypes.STRING,
     // the user's age (a string)
-    location: DataTypes.INTEGER,
+    location: DataTypes.STRING,
     // the user's employment status (a boolean)
-    employed: DataTypes.BOOLEAN,
+    employed: DataTypes.STRING,
     // the user's job title after bootcamp (a string)
     title: DataTypes.STRING,
     // the user's salary (an integer)
-    salary: DataTypes.INTEGER
+    salary: DataTypes.STRING
   });
 
   // Author.sync();

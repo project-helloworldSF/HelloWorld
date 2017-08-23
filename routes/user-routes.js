@@ -23,7 +23,17 @@ module.exports = function(app) {
     // and complete property
     db.Author.create({
       username: req.body.username,
-      password: req.body.password
+      password: req.body.password,
+      profile_pic: req.body.profile_pic,
+      age: req.body.age,
+      gender: req.body.gender,
+      ethnicity: req.body.ethnicity,
+      bootcamp_name: req.body.bootcamp_name,
+      date_range: req.body.date_range,
+      location: req.body.location,
+      employed: req.body.employed,
+      title: req.body.title,
+      salary: req.body.salary
     }).then(function(dbAuthor) {
       // We have access to the new Author as an argument inside of the callback function
       res.redirect("/");

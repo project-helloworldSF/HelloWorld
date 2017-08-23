@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "dev01",
-    "database": "blogger",
+    "database": "helloworld",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
