@@ -45,6 +45,6 @@ $(document).ready(function() {
   }
 
   function reRoute() {
-    window.location.href = "/user";
+    window.location.href = "/userProfiles";
   }
 });
