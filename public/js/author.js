@@ -38,6 +38,7 @@ $(document).ready(function() {
       salary: salaryInput.val().trim()
     });
   }
+console.log(upsertAuthor);
 
   // A function for creating an author. Calls getAuthors upon completion
   function upsertAuthor(authorData) {
@@ -45,6 +46,7 @@ $(document).ready(function() {
   }
 
   function reRoute() {
-    window.location.href = "/user";
+    window.location.href = "/userProfile";
   }
 });
+module.exports = upsertAuthor();
